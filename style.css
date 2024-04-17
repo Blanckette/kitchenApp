@@ -1,0 +1,14 @@
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    white-space: ;
+}
+
+p {
+    white-space: nowrap;
+    border: solid;
+    padding: 1rem;
+    border-color: aquamarine;
+    border-radius: 15rem;
+}
