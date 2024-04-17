@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>GOODZY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./output.css" rel="stylesheet">
     </head>
     <body>
         <header class="grid grid-cols-3 gap-x-4 my-4 mx-4 justify-evenly">
-            <nav class="content-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <nav class="content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </nav>
@@ -21,8 +22,7 @@
             <div class="justify-self-end content-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>              
-            </div>
+                </svg>
         </header>
         <section>
             <img src="https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="dessert">
@@ -31,7 +31,6 @@
                 <h2 class="text-slate-100 text-6xl text-center">Peanut Butter & Berries Parfait</h2>
                 <p class="text-slate-100 text-center">This nourishing recipe is perfect for all people of all ages! It is quick and easy to make, but packed with flavour and is sure to impress your guests.</p>
                 <button type="button" class="border-solid border-2 p-5 text-slate-200 font-semibold rounded-md hover:bg-slate-100 hover:text-slate-950 hover:scale-110 duration-300" href="">View recipe ></button>
-                <button type="button" class="border-solid border-2 p-5 text-slate-200 font-semibold rounded-md hover:bg-slate-100 hover:text-slate-950 hover:scale-110 duration-300" href="">View recipe ></button>
             </div>
         </section>
         <section class="mx-4">
@@ -39,35 +38,43 @@
                 Recipes
             </h2>
             <div class="border-solid border-t-2 border-slate-950"></div>
-            <div id="menu" class="flex flex-row justify-start gap-6 py-6 items-center">
+            <div class="flex flex-row justify-start gap-6 py-6 items-center overflow-x-scroll">
                 <div>
-                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2 hover:bg-slate-500">All Recipes</p>
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-transparent hover:border-amber-800 p-2 duration-300 focus:bg-stone-400">
+                        <a href="">All Recipes</a>
+                    </p>
                 </div>
-                <div class="group border-solid rounded-full border-2 border-amber-800 p-2">
-                    <a class="group-hover:border-solid rounded-full border-2 border-amber-800 p-2" href="">
-                        Breakfast
-                    </a>    
-                </div>
-                <div>
-                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2 focus:ring-2 focus:ring-amber-800">Dessert</p>
+                <div class="whitespace-nowrap border-solid rounded-full border-2 border-transparent hover:border-amber-800 p-2 duration-300">
+                    <a  href="">Breakfast</a>
                 </div>
                 <div>
-                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2">Drinks</p>
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-transparent hover:border-amber-800 p-2 duration-300">
+                        <a href="">Dessert</a>
+                    </p>
                 </div>
                 <div>
-                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2">Main Course</p>
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-transparent hover:border-amber-800 p-2 duration-300">
+                        <a href="">Drinks</a>
+                    </p>
                 </div>
                 <div>
-                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2">Snacks</p>
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-transparent hover:border-amber-800 p-2 duration-300">
+                        <a href="">Main Course</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-transparent hover:border-amber-800 p-2 duration-300">
+                        <a href="">Snacks</a>
+                    </p>
                 </div>
             </div>
             <div class="border-solid border-t-2 border-slate-950"></div>
-        </section>   
-        <section class="mx-4 my-8 relative flex flex-col gap-8">
+        </section>
+        <section class="mx-4 my-8 flex flex-col gap-10">
             <div>
-                <div>
-                    <img class="hover:scale-110 ease-in duration-300 overflow-hidden absolute w-full h-full" src="https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="soupe">
-                </div>                    
+                <div class="overflow-hidden">
+                    <img class="hover:scale-110 hover:object-contain duration-300 rounded-md" src="https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="soupe">
+                </div>
                 <div class="flex flex-row gap-4 justify-center p-4 text-amber-800">
                     <p class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
@@ -78,15 +85,15 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
                         </svg>
-                        15 MIN  
+                        15 MIN
                     </p>
                 </div>
                 <h4 class="font-semibold text-lg text-center hover:underline duration-400">Vegan pumpkin soup with tofu</h4>
             </div>
             <div>
-                <div>
-                    <img class="hover:scale-110 ease-in duration-300 overflow-hidden absolute w-full h-full" src="https://images.pexels.com/photos/19062753/pexels-photo-19062753/free-photo-of-assiette-diner-dejeuner-repas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="baked">
-                </div>                    
+                <div class="overflow-hidden">
+                    <img class="hover:scale-110 hover:object-contain duration-300 rounded-md" src="https://images.pexels.com/photos/19062753/pexels-photo-19062753/free-photo-of-assiette-diner-dejeuner-repas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="baked">
+                </div>
                 <div class="flex flex-row gap-4 justify-center p-4 text-amber-800">
                     <p class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
@@ -97,15 +104,15 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
                         </svg>
-                        25 MIN  
+                        25 MIN
                     </p>
                 </div>
                 <h4 class="font-semibold text-lg text-center hover:underline duration-400">Baked zucchini with tomatoes and onions</h4>
             </div>
             <div>
-                <div>
-                    <img class="hover:scale-110 ease-in duration-300 overflow-hidden absolute w-full h-full" src="https://images.pexels.com/photos/6426069/pexels-photo-6426069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="hot pot">
-                </div>                    
+                <div class="overflow-hidden">
+                    <img class="hover:scale-110 hover:object-contain duration-300 rounded-md" src="https://images.pexels.com/photos/6426069/pexels-photo-6426069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="hot pot">
+                </div>
                 <div class="flex flex-row gap-4 justify-center p-4 text-amber-800">
                     <p class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
@@ -116,7 +123,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
                         </svg>
-                        35 MIN  
+                        35 MIN
                     </p>
                 </div>
                 <h4 class="font-semibold text-lg text-center hover:underline duration-400">Hot pot with veggies, herbs and chilli peppers</h4>
@@ -124,15 +131,19 @@
         </section>
         <section>
             <img src="https://images.pexels.com/photos/1128426/pexels-photo-1128426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kitchen">
-            <div class="p-10">
-                <p>NEWSLETTER</p>
-                <h2>Subscribe To Our Weekly Updates!</h2>
-                <p>This is some text inside of a div block.</p>
-                <div>
-                    <div class="bg-slate-500">
-                        <input type="text">
+            <div class="p-16 bg-slate-300 flex flex-col justify-center items-center gap-8">
+                <p class="text-slate-500 font-bold text-sm">NEWSLETTER</p>
+                <h2 class="text-slate-600 font-extrabold text-5xl text-center leading-snug">Subscribe To Our Weekly Updates!</h2>
+                <p class="text-slate-600">This is some text inside of a div block.</p>
+                <div class="flex flex-col gap-4">
+                    <div class="bg-slate-100 border-solid border-2 rounded-md flex p-1 fill-slate-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" class="w-6 h-6">
+                            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                        </svg>
+                        <input class="bg-slate-100 w-full" type="text">
                     </div>
-                    <button class="bg-slate-800 border-solid border-2 border-slate-800" type="submit">Subscribe</button>
+                    <button class="bg-slate-600 border-solid border-2 hover:border-slate-900 hover:text-slate-900 hover:bg-transparent duration-300 p-1 rounded-sm text-slate-200 font-semibold" type="submit">Subscribe</button>
                 </div>
             </div>
         </section>
