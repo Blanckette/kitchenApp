@@ -31,6 +31,7 @@
                 <h2 class="text-slate-100 text-6xl text-center">Peanut Butter & Berries Parfait</h2>
                 <p class="text-slate-100 text-center">This nourishing recipe is perfect for all people of all ages! It is quick and easy to make, but packed with flavour and is sure to impress your guests.</p>
                 <button type="button" class="border-solid border-2 p-5 text-slate-200 font-semibold rounded-md hover:bg-slate-100 hover:text-slate-950 hover:scale-110 duration-300" href="">View recipe ></button>
+                <button type="button" class="border-solid border-2 p-5 text-slate-200 font-semibold rounded-md hover:bg-slate-100 hover:text-slate-950 hover:scale-110 duration-300" href="">View recipe ></button>
             </div>
         </section>
         <section class="mx-4">
@@ -38,29 +39,116 @@
                 Recipes
             </h2>
             <div class="border-solid border-t-2 border-slate-950"></div>
-            <div class="flex flex-row justify-center gap-6 py-6 items-center max-w-full">
-                <div class="border-solid rounded-full border-2 border-amber-800">
-                    <p class="whitespace-nowrap">All Recipes</p>
+            <div id="menu" class="flex flex-row justify-start gap-6 py-6 items-center">
+                <div>
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2 hover:bg-slate-500">All Recipes</p>
+                </div>
+                <div class="group border-solid rounded-full border-2 border-amber-800 p-2">
+                    <a class="group-hover:border-solid rounded-full border-2 border-amber-800 p-2" href="">
+                        Breakfast
+                    </a>    
                 </div>
                 <div>
-                    Breakfast
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2 focus:ring-2 focus:ring-amber-800">Dessert</p>
                 </div>
                 <div>
-                    Dessert
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2">Drinks</p>
                 </div>
                 <div>
-                    Drinks
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2">Main Course</p>
                 </div>
                 <div>
-                    Main Course
-                </div>
-                <div>
-                    Snacks
+                    <p class="whitespace-nowrap border-solid rounded-full border-2 border-amber-800 p-2">Snacks</p>
                 </div>
             </div>
             <div class="border-solid border-t-2 border-slate-950"></div>
-            <button class="bg-slate-600 rounded-full p-8">hello</button>
+        </section>   
+        <section class="mx-4 my-8 relative flex flex-col gap-8">
+            <div>
+                <div>
+                    <img class="hover:scale-110 ease-in duration-300 overflow-hidden absolute w-full h-full" src="https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="soupe">
+                </div>                    
+                <div class="flex flex-row gap-4 justify-center p-4 text-amber-800">
+                    <p class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
+                      </svg>
+                      Starters
+                    </p>
+                    <p class="flex flex-row gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                        </svg>
+                        15 MIN  
+                    </p>
+                </div>
+                <h4 class="font-semibold text-lg text-center hover:underline duration-400">Vegan pumpkin soup with tofu</h4>
+            </div>
+            <div>
+                <div>
+                    <img class="hover:scale-110 ease-in duration-300 overflow-hidden absolute w-full h-full" src="https://images.pexels.com/photos/19062753/pexels-photo-19062753/free-photo-of-assiette-diner-dejeuner-repas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="baked">
+                </div>                    
+                <div class="flex flex-row gap-4 justify-center p-4 text-amber-800">
+                    <p class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
+                      </svg>
+                      Main dish
+                    </p>
+                    <p class="flex flex-row gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                        </svg>
+                        25 MIN  
+                    </p>
+                </div>
+                <h4 class="font-semibold text-lg text-center hover:underline duration-400">Baked zucchini with tomatoes and onions</h4>
+            </div>
+            <div>
+                <div>
+                    <img class="hover:scale-110 ease-in duration-300 overflow-hidden absolute w-full h-full" src="https://images.pexels.com/photos/6426069/pexels-photo-6426069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="hot pot">
+                </div>                    
+                <div class="flex flex-row gap-4 justify-center p-4 text-amber-800">
+                    <p class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
+                      </svg>
+                      Main dish
+                    </p>
+                    <p class="flex flex-row gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                        </svg>
+                        35 MIN  
+                    </p>
+                </div>
+                <h4 class="font-semibold text-lg text-center hover:underline duration-400">Hot pot with veggies, herbs and chilli peppers</h4>
+            </div>
         </section>
-        <script src="" async defer></script>
+        <section>
+            <img src="https://images.pexels.com/photos/1128426/pexels-photo-1128426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kitchen">
+            <div class="p-10">
+                <p>NEWSLETTER</p>
+                <h2>Subscribe To Our Weekly Updates!</h2>
+                <p>This is some text inside of a div block.</p>
+                <div>
+                    <div class="bg-slate-500">
+                        <input type="text">
+                    </div>
+                    <button class="bg-slate-800 border-solid border-2 border-slate-800" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-slate-900 flex flex-col justify-center gap-8 p-12">
+            <div class="flex flex-col items-center gap-4">
+                <img src="../assets/62d944773758c13cfad6a3cc_GOODZY-white.svg" alt="Logo">
+                <p class="text-slate-100 text-xs">Easy healthy recipes that make you feel good</p>
+            </div>
+            <div class="grid grid-cols-4 text-slate-100 text-center gap-4 py-4">
+                <a class="hover:underline hover:scale-105" href="">All Recipes</a>
+                <a class="hover:underline hover:scale-105" href="">About</a>
+                <a class="hover:underline hover:scale-105" href="">Recipes FAQ</a>
+                <a class="hover:underline hover:scale-105" href="">For partners</a>
+            </div>
+            <div class="border-solid border-t-2 border-slate-100"></div>
+            <p class="text-slate-100">Copyright 2024 — Developed by GOODZY</p>
+        </footer>
     </body>
 </html>
