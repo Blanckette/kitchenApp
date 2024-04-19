@@ -6,27 +6,53 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="grid grid-cols-3 gap-x-4 my-4 mx-4 justify-evenly">
-        <nav class="content-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+    <header class="grid grid-cols-3 gap-x-4 my-4 mx-4 justify-evenly 2xl:mx-96">
+        <nav class="content-center">
+            <div class="hidden lg:inline-flex gap-6 p-6">
+                <p class="border-solid border-2 border-transparent hover:border-amber-800 rounded-full p-2 duration-300">
+                    <a href="recipies.html">Recipes</a>
+                </p>
+                <p class="border-solid border-2 border-transparent hover:border-amber-800 rounded-full p-2 duration-300">
+                    <a href="about.html">About</a>
+                </p>
+                <p class="border-solid border-2 border-transparent hover:border-amber-800 rounded-full p-2 duration-300 whitespace-nowrap">
+                    <a href="for-partner.html">For Partners</a>
+                </p>
+            </div>
+            <div class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
         </nav>
         <div class="content-center justify-self-center">
             <img src="../assets/62d9445052c480d22ceee4bf_GOODZY.svg" alt="logo">
             <p class="text-xs text-center text-slate-800 pt-2">Easy & Healthy Recipes</p>
         </div>
         <div class="justify-self-end content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
+            <div class="hidden lg:inline-flex border-solid border-2 border-slate-500 p-2 rounded-full">
+                <input type="text">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+                      </svg>
+                </button>
+            </div>
+            <div class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </div>
         </div>
     </header>
     <section class="bg-slate-50 opacity-95 bg-cover align-bottom bg-origin-border bg-[url('https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-center px-4 py-12 h-full md:py-40 md:px-36">
-        <h1 class="text-6xl py-4 text-zinc-100 max-w-lg">Over 500 Easy Healthy Meal Preparation Recipes</h1>
-        <p class="text-lg py-4 text-zinc-100 max-w-md">Get your family excited about meals again with easy and healthy recipes from GOODZY cooking blog.</p>
-        <a href="./recipies.html">
-            <button type="button" class="text-lg border-solid border-2 rounded-lg p-3 bg-slate-900 text-slate-50 hover:bg-slate-700 hover:scale-105 duration-300">View all recipes</button>
-        </a>
+        <div class="2xl:mx-96">
+            <h1 class="text-6xl py-4 text-zinc-100 max-w-lg">Over 500 Easy Healthy Meal Preparation Recipes</h1>
+            <p class="text-lg py-4 text-zinc-100 max-w-md">Get your family excited about meals again with easy and healthy recipes from GOODZY cooking blog.</p>
+            <a href="./recipies.html">
+                <button type="button" class="text-lg border-solid border-2 rounded-lg p-3 bg-slate-900 text-slate-50 hover:bg-slate-700 hover:scale-105 duration-300">View all recipes</button>
+            </a>
+        </div>
     </section>
     <section class="flex flex-col justify-center content-center items-center gap-8 mx-24 my-12 md:flex-row md:items-start md:mx-80">
         <div class="flex flex-col items-center gap-2 max-w-48 min-w-40">
@@ -57,38 +83,50 @@
             <p class="text-center">We post new recipes every week, stay tuned for updates!</p>
         </div>
     </section>
-    <section class="flex flex-col items-center mx-2 gap-4 md:mx-24">
+    <section class="flex flex-col items-center mx-2 gap-4 md:mx-24 2xl:mx-96">
         <h1 class="font-bold text-4xl py-10">Featured Recipes</h1>
         <div class="grid grid-cols-3 gap-4">
-            <div class="flex flex-col items-center gap-2 md:min-w-32">
-                <div class="overflow-hidden">
-                    <img class="h-52 object-cover md:min-h-96 hover:scale-110 duration-300" src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Spagetti">
-                </div>
-                <h3 class="text-amber-900 uppercase font-medium text-xs">FEATURED</h3>
-                <h2 class="font-medium text-center">Baked zucchini with tomatoes and onions</h2>
+            <div class="flex flex-col items-center gap-2 md:min-w-32 hover:text-slate-700 duration-300">
+                <a href="recipies-details.html">
+                    <div class="overflow-hidden">
+                        <img class="h-52 object-cover md:min-h-96 hover:scale-110 duration-300" src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Spagetti">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center py-4">
+                        <h3 class="text-amber-900 uppercase font-medium text-xs">FEATURED</h3>
+                        <h2 class="font-medium text-center">Baked zucchini with tomatoes and onions</h2>
+                    </div>
+                </a>
             </div>
-            <div class="flex flex-col items-center gap-2 md:min-w-32">
-                <div class="overflow-hidden">
-                    <img class="h-52 object-cover md:min-h-96 hover:scale-110 duration-300" src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="smoothie bowl">
-                </div>
-                <h3 class="text-amber-900 uppercase font-medium text-xs">FEATURED</h3>
-                <h2 class="font-medium text-center">Smoothie bowl with granola and berries</h2>
+            <div class="flex flex-col items-center gap-2 md:min-w-32 hover:text-slate-700 duration-300">
+                <a href="recipies-details.html">
+                    <div class="overflow-hidden">
+                        <img class="h-52 object-cover md:min-h-96 hover:scale-110 duration-300" src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="smoothie bowl">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center py-4">
+                        <h3 class="text-amber-900 uppercase font-medium text-xs">FEATURED</h3>
+                        <h2 class="font-medium text-center">Smoothie bowl with granola and berries</h2>
+                    </div>
+                </a>
             </div>
-            <div class="flex flex-col items-center gap-2 md:min-w-32">
-                <div class="overflow-hidden">
-                    <img class="h-52 w-56 object-cover md:min-h-96 md:w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="lamb">
-                </div>
-                <h3 class="text-amber-900 uppercase font-medium text-xs">FEATURED</h3>
-                <h2 class="font-medium text-center">Vegan pumpkin soup with tofu</h2>
+            <div class="flex flex-col items-center gap-2 md:min-w-32 hover:text-slate-700 duration-300">
+                <a href="recipies-details.html">
+                    <div class="overflow-hidden">
+                        <img class="h-52 w-56 object-cover md:min-h-96 md:w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="lamb">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center py-4">
+                        <h3 class="text-amber-900 uppercase font-medium text-xs text-center">FEATURED</h3>
+                        <h2 class="font-medium text-center">Vegan pumpkin soup with tofu</h2>
+                    </div>
+                </a>
             </div>
         </div>
         <button type="button" href="" class="font-semibold border-solid border-2 p-4 rounded-lg bg-slate-900 text-slate-200 my-4 hover:bg-slate-700 hover:scale-110 duration-300">View all recipes</button>
     </section>
-    <section class="my-10 md:flex flex-row-reverse">
-        <div class="w-2/4">
+    <section class="my-10 md:flex flex-row-reverse 2xl:mx-96">
+        <div class="md:w-2/4">
             <img class="object-cover h-full" src="https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="dessert">
         </div>
-        <div class="bg-red-400 p-10 flex flex-col justify-center items-center gap-6 w-2/4">
+        <div class="bg-red-400 p-10 flex flex-col justify-center items-center gap-6 md:w-2/4">
             <p class="text-slate-100 uppercase text-xs">PICK OF THE WEEK</p>
             <h2 class="text-slate-100 text-6xl text-center">Peanut Butter & Berries Parfait</h2>
             <p class="text-slate-100 text-center">This nourishing recipe is perfect for all people of all ages! It is quick and easy to make, but packed with flavour and is sure to impress your guests.</p>
@@ -99,34 +137,44 @@
         <h2 class="font-extrabold text-4xl text-center py-10">Popular Categories</h2>
         <div class="grid grid-cols-3 grid-rows-2 gap-8 md:grid-rows-1 md:grid-cols-5">
             <div class="max-w-40 min-w-28">
-                <div class="overflow-hidden">
-                    <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/2136862/pexels-photo-2136862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Breakfast">
-                </div>
-                <p class="font-bold text-xl py-4 text-center">Breakfast</p>
+                <a href="recipies.html">
+                    <div class="overflow-hidden">
+                        <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/2136862/pexels-photo-2136862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Breakfast">
+                    </div>
+                    <p class="font-bold text-xl py-4 text-center hover:text-slate-700">Breakfast</p>
+                </a>
             </div>
             <div class="max-w-40 min-w-28">
-                <div class="overflow-hidden">
-                    <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dessert">
-                </div>
-                <p class="font-bold text-xl py-4 text-center">Dessert</p>
+                <a href="recipies.html">
+                    <div class="overflow-hidden">
+                        <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dessert">
+                    </div>
+                    <p class="font-bold text-xl py-4 text-center hover:text-slate-700">Dessert</p>
+                </a>
             </div>
             <div class="max-w-40 min-w-28">
-                <div class="overflow-hidden">
-                    <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/3323682/pexels-photo-3323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Drinks">
-                </div>
-                <p class="font-bold text-xl py-4 text-center">Drinks</p>
+                <a href="recipies.html">
+                    <div class="overflow-hidden">
+                        <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/3323682/pexels-photo-3323682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Drinks">
+                    </div>
+                    <p class="font-bold text-xl py-4 text-center hover:text-slate-700">Drinks</p>
+                </a>
             </div>
             <div class="max-w-40 min-w-28">
-                <div class="overflow-hidden">
-                    <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Main">
-                </div>
-                <p class="font-bold text-xl py-4 text-center">Main course</p>
+                <a href="recipies.html">
+                    <div class="overflow-hidden">
+                        <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Main">
+                    </div>
+                    <p class="font-bold text-xl py-4 text-center hover:text-slate-700">Main course</p>
+                </a>
             </div>
             <div class="max-w-40 min-w-28">
-                <div class="overflow-hidden">
-                    <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/302457/pexels-photo-302457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snacks">
-                </div>
-                <p class="font-bold text-xl py-4 text-center">Snacks</p>
+                <a href="recipies.html">
+                    <div class="overflow-hidden">
+                        <img class="h-40 object-cover rounded-sm w-full hover:scale-110 duration-300" src="https://images.pexels.com/photos/302457/pexels-photo-302457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snacks">
+                    </div>
+                    <p class="font-bold text-xl py-4 text-center hover:text-slate-700">Snacks</p>
+                </a>
             </div>
         </div>
         <button type="button" class="border-solid border-2 border-slate-950 p-4 my-8 rounded-md font-semibold hover:bg-slate-950 hover:text-slate-100 hover:scale-110 duration-300">View all recipes ></button>
@@ -134,7 +182,7 @@
     <section class="bg-stone-300 p-8 font-semibold md:text-center md:flex md:justify-center">
         <p>Have questions about a recipe? <a class="text-amber-800 underline" href="">Check our recipe FAQ</a></p>
     </section>
-    <section class="mx-8 my-12">
+    <section class="mx-8 my-12 2xl:mx-96">
         <h2 class="font-bold text-4xl py-12 text-center">Author Resources</h2>
         <div class="grid grid-cols-2 gap-12">
             <div class="flex flex-col gap-8 md:flex-row md:justify-center md:items-start">
@@ -144,7 +192,7 @@
                 <div class="flex flex-col gap-4">
                     <h4 class="font-semibold text-2xl pb-4">Cookbook</h4>
                     <p class="text-slate-700 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas repellat porro autem ad assumenda facere deleniti soluta sequi unde. Molestiae possimus mollitia maiores, a nemo corrupti voluptatum porro enim qui.</p>
-                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="">Learn more></a>
+                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="about.html">Learn more></a>
                 </div>
             </div>
             <div class="flex flex-col gap-8 md:flex-row md:items-start md:justify-center">
@@ -154,7 +202,7 @@
                 <div class="flex flex-col gap-4">
                     <h4 class="font-semibold text-2xl">About</h4>
                     <p class="text-slate-700 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eius iure soluta excepturi repellat quas! Modi, non possimus, nesciunt excepturi voluptatem dolores recusandae magnam ab!</p>
-                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="">Learn more></a>
+                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="about.html">Learn more></a>
                 </div>
             </div>
         </div>
@@ -167,7 +215,7 @@
                 <div class="flex flex-col gap-4">
                     <h4 class="font-semibold text-2xl">Recipes FAQ</h4>
                     <p class="text-slate-700 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam maiores rerum ab corrupti, ipsa vero exercitationem ad nisi iusto aspernatur dicta, similique neque ut voluptatum magni sequi reprehenderit error tenetur?</p>
-                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="">Learn more></a>
+                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="about.html">Learn more></a>
                 </div>
             </div>
             <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-center">
@@ -177,16 +225,16 @@
                 <div class="flex flex-col gap-4">
                     <h4 class="font-semibold text-2xl">For partners</h4>
                     <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nemo quod maxime cupiditate vitae ipsum eum doloribus exercitationem, nihil, maiores, ex eligendi dicta. Voluptatem maxime doloremque, facere odio nulla aliquam?</p>
-                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="">Learn more></a>
+                    <a class="text-amber-800 underline font-semibold hover:translate-x-2 duration-300" href="about.html">Learn more></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="md:flex">
-        <div class="w-2/4">
+    <section class="md:flex 2xl:mx-96">
+        <div class="md:w-2/4">
             <img class="h-full object-cover" src="https://images.pexels.com/photos/1128426/pexels-photo-1128426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="kitchen">
         </div>
-        <div class="bg-pink-100 p-14 w-2/4">
+        <div class="bg-pink-100 p-14 md:w-2/4">
             <h2 class="font-extrabold text-6xl text-amber-800 py-8">Idea Behind GOODZY</h2>
             <div>
                 <h4 class="font-semibold text-lg text-amber-800 py-3">10 Ingredients</h4>
@@ -203,9 +251,9 @@
             <button type="button" class="font-semibold text-amber-800 p-4 border-solid border-2 border-amber-800 rounded-md my-6 hover:bg-amber-800 hover:text-slate-100 hover:scale-110 duration-300">Learn more ></button>
         </div>
     </section>
-    <section class="my-10">
+    <section class="my-24 2xl:mx-96">
         <h2 class="font-extrabold text-4xl text-center py-8">Social media</h2>
-        <div class="grid grid-cols-3 grid-rows-2 justify-center items-center content-center mx-12 gap-6">
+        <div class="grid grid-cols-3 grid-rows-2 justify-center items-center content-center mx-12 gap-6 lg:grid-cols-6 lg:grid-rows-1 lg:mx-48">
             <div class="flex justify-center hover:fill-amber-800 hover:scale-110 duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
                 <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
@@ -244,10 +292,10 @@
             <p class="text-slate-100 text-xs">Easy healthy recipes that make you feel good</p>
         </div>
         <div class="grid grid-cols-4 text-slate-100 text-center gap-4 py-4">
-            <a class="hover:underline hover:scale-105" href="">All Recipes</a>
-            <a class="hover:underline hover:scale-105" href="">About</a>
-            <a class="hover:underline hover:scale-105" href="">Recipes FAQ</a>
-            <a class="hover:underline hover:scale-105" href="">For partners</a>
+            <a class="hover:underline hover:scale-105" href="recipies.html">All Recipes</a>
+            <a class="hover:underline hover:scale-105" href="about.html">About</a>
+            <a class="hover:underline hover:scale-105" href="recipies-details.html">Recipes FAQ</a>
+            <a class="hover:underline hover:scale-105" href="for-partner.html">For partners</a>
         </div>
         <div class="border-solid border-t-2 border-slate-100"></div>
         <p class="text-slate-100">Copyright 2024 — Developed by GOODZY</p>
