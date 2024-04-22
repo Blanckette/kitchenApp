@@ -7,55 +7,95 @@
     <title>For partners</title>
 </head>
 <body>
-    <header class="grid grid-cols-3 gap-x-4 my-4 mx-4 justify-evenly">
-        <nav class="content-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </nav>
-        <div class="content-center justify-self-center">
-            <img src="../assets/62d9445052c480d22ceee4bf_GOODZY.svg" alt="logo">
-            <p class="text-xs text-center text-slate-800 pt-2">Easy & Healthy Recipes</p>
-        </div>
-        <div class="justify-self-end content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
+    <header class="sticky top-0 bg-slate-50 py-4 z-10">
+        <div class="grid grid-cols-3 gap-x-4 my-4 mx-4 justify-evenly 2xl:w-9/12 2xl:mx-auto">
+            <nav class="content-center">
+                <div class="hidden lg:inline-flex gap-6 p-6">
+                    <p class="border-solid border-2 border-transparent hover:border-slate-700 rounded-full p-2 duration-300">
+                        <a href="recipies.html">Recipes</a>
+                    </p>
+                    <p class="border-solid border-2 border-transparent hover:border-slate-700 rounded-full p-2 duration-300">
+                        <a href="about.html">About</a>
+                    </p>
+                    <p class="border-solid border-2 border-transparent hover:border-slate-700 rounded-full p-2 duration-300 whitespace-nowrap">
+                        <a href="for-partner.html">For Partners</a>
+                    </p>
+                </div>
+                <div class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </nav>
+            <div class="content-center justify-self-center">
+                <img src="../assets/62d9445052c480d22ceee4bf_GOODZY.svg" alt="logo">
+                <p class="text-xs text-center text-slate-800 pt-2">Easy & Healthy Recipes</p>
+            </div>
+            <div class="justify-self-end content-center">
+                <div class="hidden lg:inline-flex border-solid border-2 border-slate-500 p-2 rounded-full">
+                    <input class="bg-transparent" type="text">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </header>
-    <section >
-        <div class="bg-stone-100 p-4 text-slate-900">
+    <section class="md:flex max-w-6xl mx-auto rounded-md">
+        <div class="bg-stone-100 p-4 text-slate-900 md:w-2/4 flex flex-col justify-center">
             <h1 class="font-extrabold text-6xl leading-tight py-6">Learn More About Our Partnership Program</h1>
             <p class="py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
             <button class="p-4 mb-6 border-solid border-2 border-slate-900 rounded-md font-semibold hover:bg-slate-900 hover:text-slate-200 duration-300" type="button">
                 <a href="">Apply to become a partner</a>
             </button>
         </div>
-        <img src="https://images.pexels.com/photos/2102934/pexels-photo-2102934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="partners">
+        <div class="md:w-2/4">
+            <img class="w-full" src="https://images.pexels.com/photos/2102934/pexels-photo-2102934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="partners">
+        </div>
     </section>
-    <section class="mx-4 text-slate-900">
+    <section class="text-slate-900 max-w-6xl mx-auto flex flex-col gap-6">
         <div class="flex flex-col justify-center items-center gap-6 text-center py-16">
             <h2 class="text-5xl">What Our Partners Get</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
         </div>
-        <div class="flex flex-col gap-10 my-6">
-            <img class="h-80 w-full object-cover object-bottom rounded-md" src="https://images.pexels.com/photos/1639556/pexels-photo-1639556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="salad">
-            <h4 class="text-2xl font-semibold">Promote your products to a 10M+ community</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+        <div class="flex flex-col gap-10 my-6 md:flex-row mx-6">
+            <div class="md:w-2/4">
+                <img class="h-80 w-full object-cover object-bottom rounded-md" src="https://images.pexels.com/photos/1639556/pexels-photo-1639556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="salad">
+            </div>
+            <div class="md:w-2/4 flex flex-col gap-4 justify-center">
+                <h4 class="text-2xl font-semibold">Promote your products to a 10M+ community</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            </div>
         </div>
-        <div class="flex flex-col gap-10 my-6">
-            <img class="h-80 w-full object-cover object-bottom rounded-md" src="https://images.pexels.com/photos/1346347/pexels-photo-1346347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="juice">
-            <h4 class="text-2xl font-semibold">Get 50% off to products and services from our partners</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+        <div class="flex flex-col gap-10 my-6 md:flex-row-reverse mx-6">
+            <div class="md:w-2/4">
+                <img class="h-80 w-full object-cover object-bottom rounded-md" src="https://images.pexels.com/photos/1346347/pexels-photo-1346347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="juice">
+            </div>
+            <div class="md:w-2/4 flex flex-col gap-4 justify-center">
+                <h4 class="text-2xl font-semibold">Get 50% off to products and services from our partners</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            </div>
         </div>
-        <div class="flex flex-col gap-10 my-6">
-            <img class="h-80 w-full object-cover object-bottom rounded-md" src="https://images.pexels.com/photos/267355/pexels-photo-267355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="like">
-            <h4 class="text-2xl font-semibold">Get support from our team</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+        <div class="flex flex-col gap-10 my-6 md:flex-row">
+            <div class="md:w-2/4">
+                <img class="h-80 w-full object-cover object-bottom rounded-md" src="https://images.pexels.com/photos/267355/pexels-photo-267355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="like">
+            </div>
+            <div class="md:w-2/4 flex flex-col gap-4 justify-center">
+                <h4 class="text-2xl font-semibold">Get support from our team</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            </div>
        </div>
     </section>
     <section class="bg-stone-200 py-8 mt-12">
         <h2 class="font-extrabold text-4xl text-center py-8">Social media</h2>
-        <div class="grid grid-cols-3 grid-rows-2 justify-center items-center content-center mx-12 gap-6">
+        <div class="grid grid-cols-3 grid-rows-2 justify-center items-center content-center mx-12 gap-6 md:grid-cols-6 md:grid-rows-1 max-w-6xl md:mx-auto">
             <div class="flex justify-center hover:fill-amber-800 hover:scale-110 duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
                 <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
@@ -88,41 +128,43 @@
             </div>
         </div>
     </section>
-    <section class="bg-stone-400 px-4 py-20 flex flex-col justify-center items-center gap-8">
-        <h6 class="text-xs text-slate-700">PARTNER APPLICATION</h6>
-        <p class="text-slate-800 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        <div class="flex flex-col gap-6">
-            <div class="flex gap-2">
+    <section class="bg-stone-400 px-4 py-20">
+        <div class="flex flex-col justify-center items-center gap-8 max-w-xl mx-auto">
+            <h6 class="text-xs text-slate-700">PARTNER APPLICATION</h6>
+            <p class="text-slate-800 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-2">
+                    <div class="flex bg-slate-200 p-2 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                        </svg>
+                        <input class="bg-transparent" type="text">
+                    </div>
+                    <div class="flex bg-slate-200 p-2 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                        </svg>
+                        <input class="bg-transparent" type="text">
+                    </div>
+                </div>
                 <div class="flex bg-slate-200 p-2 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                        <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                        <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
                     </svg>
                     <input class="bg-transparent" type="text">
                 </div>
                 <div class="flex bg-slate-200 p-2 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H8.25Z" clip-rule="evenodd" />
+                        <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
                     </svg>
                     <input class="bg-transparent" type="text">
                 </div>
+                <button class="bg-slate-900 text-slate-200 font-semibold p-4 rounded border-solid border-2 border-slate-900 hover:bg-transparent hover:text-slate-900 duration-300" type="submit">
+                    Submit application
+                </button>
             </div>
-            <div class="flex bg-slate-200 p-2 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-                    <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-                  </svg>
-                <input class="bg-transparent" type="text">
-            </div>
-            <div class="flex bg-slate-200 p-2 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H8.25Z" clip-rule="evenodd" />
-                    <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
-                </svg>
-                <input class="bg-transparent" type="text">
-            </div>
-            <button class="bg-slate-900 text-slate-200 font-semibold p-4 rounded border-solid border-2 border-slate-900 hover:bg-transparent hover:text-slate-900 duration-300" type="submit">
-                Submit application
-            </button>
         </div>
     </section>
     <footer class="bg-slate-900 flex flex-col justify-center gap-8 p-12">
