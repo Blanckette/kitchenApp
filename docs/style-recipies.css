@@ -1,0 +1,11 @@
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.rounded-full {
+    border-radius: 15rem;
+}
+
+#menu {
+    overflow-x: scroll;
+}
